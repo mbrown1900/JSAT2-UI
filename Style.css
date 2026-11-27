@@ -1,0 +1,192 @@
+/* style.css - styles JSAT2 Part B5 */
+/* Font: Arial */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #9e9e9e;
+  color: #222;
+}
+
+header {
+  background-color: #7a7a7a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 56px;
+  font-weight: normal;
+}
+
+.icon {
+  font-size: 56px;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  background-color: #d9d9d9;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+  color: white;
+  -webkit-text-stroke: 1px #333;
+  font-size: 28px;
+}
+
+.search-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.search-row input {
+  width: 180px;
+}
+
+#searchResult {
+  flex: 1;
+  min-width: 250px;
+  margin: 0;
+  background-color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Blue buttons */
+button {
+  background-color: #2b82cb;
+  color: white;
+  border: 2px solid #1a4d7a;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/*sort buttons moved to right*/
+.sort-buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+button:hover {
+  background-color: #1a4d7a;
+}
+
+.button-row {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Movie list with contrasting stripes */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+th {
+  text-align: left;
+  padding: 8px;
+  color: #333;
+}
+
+td {
+  padding: 10px 8px;
+  color: white;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #909090;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #777;
+}
+
+/* Add update delete area */
+.maintenance {
+  background-color: transparent;
+}
+
+.mode-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.mode {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 15px 30px;
+}
+
+/* darker button */
+.mode.active {
+  background-color: #1a4d7a;
+}
+
+#movieForm {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 10px;
+  max-width: 650px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+#movieForm label {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#movieForm input:disabled {
+  background-color: #bbb;
+}
+
+#enterBtn {
+  grid-column: 2;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Message box */
+#msg {
+  display: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #7a7a7a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

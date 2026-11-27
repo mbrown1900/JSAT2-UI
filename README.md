@@ -1,2 +1,2 @@
-# JSTAT2-UI
+# JSAT2-UI
 Assignment 2
